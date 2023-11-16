@@ -1,0 +1,89 @@
+<!-- COMENTÁRIOS DE TODAS AS ALTERAÇÕES:
+    
+        Estrutura de decisão:  foi usado if, else if, else para saber o a hora do dia e conforme o horario assim que entra no 
+        site aparece a mensagem com o 'alert':  "Olá!Bom dia ou Boa tarde ou Boa noite.Bem-vindo ao nosso site"
+
+        Estrutura de laço: foi adicionado um elemento de clique no meu <li> do header usando while, além de um função
+        para exibir informações sobre o carro usando alert junto com if e else caso tenha ou não informações disponivel,
+         também switch para mostrar informações especificas de cada modelo no caso fiz apenas os dois primeiros Buggati e Pagani.
+       
+        Função: criei uma simples função para quando clicar no primeiro item <li> do header no caso o Buggati abra um nova
+        página sem 'fechar' a principal, no caso a página do próprio site da Buggati.   
+
+        CSS COM JS: eu fiz um pequeno detalhe adicionei um identificador no meu 'Saiba Mais.' aqui no html e no javascript adicionei um
+        elemento de clique ao mesmo e um sistema rgb para alterar para cores aleatorias ao clicar em 'Saiba Mais.'.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Mello</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="global.css">
+</head> 
+<body>
+    <header>
+        <nav class="nav-list">
+            <ul>
+                <li id="btn">Buggati</li>
+                <li>Pagani</li>
+                <li>Koenigsegg</li>
+                <li>Ferrari</li>
+                <li>Lamborghini</li>
+                <li>Mercedes</li>
+                <li>McLaren</li>
+                <li>Porsche</li>
+                <li>Audi</li>
+                <li>BMW</li>
+                <li>
+                    <a href="#">
+                        <img src="/public/assets/search-icon.svg" alt="Icone de busca">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/public/assets/cart-icon.svg" alt="Icone de compras">
+                    </a>
+                </li>
+            </ul>
+ 
+        </nav>
+
+    </header>
+    <main>
+        <ul id="lista-carros"></ul>
+        <section class="main-section">
+            <div class="texto-buggati">
+                <h1>Super Carros</h1>
+                <h2>Buggati La Voiture</h2>
+                <a href="#" id="saiba-mais">Saiba mais.</a>
+            </div>
+            <img src="/public/assets/carro1.jpg" alt="Imagem de um Buggati">
+        </section>
+
+        <section class="ferrari-section">
+            <div>
+                <p>Ferrari F8</p>
+                <p>Modelo 2024</p>
+            </div>
+            <img src="/public/assets/carro2.jpg" alt="Imagem de uma Ferrari">
+            <div>
+                <p>A Ferrari F8, exemplar da elegância automotiva combina potência deslumbrante e design aerodinâmico irresistível.</p>
+            </div>
+        </section>
+
+        <section class="lamborghini-section">
+            <div class="texto-lamborghini">
+                <h2>Lamborghini Aventador SVJ</h2>
+                <p>Apenas 50 exemplares fabricados.</p>
+                <div class="linklambo">
+                    <a href="#">Compre agora</a>
+                </div>
+
+            </div>
+            <img src="public/assets/carro3.jpg" alt="Imagem de uma Lamborghini">
+        </section>
+    </main>
+</body>
+</html>

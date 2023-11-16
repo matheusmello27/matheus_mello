@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,500&family=Poppins:ital,wght@1,100&family=Roboto:wght@300;400;500;700&family=Skranji&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    /*definir cores caso eu queira alterar sem muito trabalho*/
+    --bg-principal: #000000;
+    --text-header: #ffffff;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --link-cor: #2997FF;
+    --text-dark: #1D1D1F;
+}
+
+header {
+    background-color: var(--bg-principal);
+    color: var(--text-header);
+    height: fit-content;
+    opacity: 0.9;
+    position: sticky; /* para sempre ficar fixo em cima mesmo quando tenha scroll na pagina */
+    top: 0; /* dizendo que é para colar em cima , em baixo seria (border 0)*/
+    z-index: 1; /* para o header ficar em cima dos outros elementos da pagina */
+}
+
+header nav ul {
+    margin: 0 auto; 
+    width: fit-content;
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    min-width: fit-content; 
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
+
+main { 
+    /*dividir as sessões*/
+    display: flex;
+    flex-direction: column;
+    gap: 12px;  
+}
+
+main section {
+    text-align: center; 
+    position: relative;
+}
+
+main section img {
+    width: 100%; 
+    height: auto;
+}
+
+main section a {
+    color: var(--link-cor);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+main section a:hover{
+    text-decoration: underline; 
+}
+
+main .main-section h1 {
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .main-section h2 {
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem; 
+}
+
+main .main-section sub {
+    font-size: 0.9rem;
+}
+
+main .main-section .texto-buggati{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+main .ferrari-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .ferrari-section > div:last-child {
+    bottom: 50px;
+}
+
+main .ferrari-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60%;
+}
+
+main .ferrari-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--text-header);
+    letter-spacing: -0.6px;
+}
+
+main .ferrari-section p {
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.11px;
+}
+
+main .ferrari-section span {
+    color: var(--subtitle-color);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
+}
+
+
+
+main .lamborghini-section h2 {
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .lamborghini-section p {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem; 
+}
+
+main .lamborghini-section .linklambo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .lamborghini-section .texto-lamborghini{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
